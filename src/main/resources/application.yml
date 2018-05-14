@@ -1,0 +1,4 @@
+katharsis:
+    resourcePackage: org.glenlivet.fortune.domain
+    domainName: http://localhost:8080
+    pathPrefix: /api
