@@ -3,7 +3,7 @@ package org.glenlivet.fortune.domain;
 import io.katharsis.resource.annotations.JsonApiId;
 import io.katharsis.resource.annotations.JsonApiResource;
 
-@JsonApiResource(type = "project-prototype")
+@JsonApiResource(type = "project-prototypes")
 public class ProjectPrototype {
 
     @JsonApiId

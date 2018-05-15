@@ -30,8 +30,12 @@ public class MockProjectPrototypeServiceImpl implements ProjectPrototypeService 
     @Override
     public Iterable<ProjectPrototype> findAll() {
         Collection<ProjectPrototype> retVal = new ArrayList<>();
-        retVal.add(new ProjectPrototype(0L, "Big Data Jupyter", "Glen Zhang"));
-        retVal.add(new ProjectPrototype(1L, "Sonarqube", "??"));
+        ProjectPrototype pp1 = new ProjectPrototype(0L, "Big Data Jupyter", "Glen Zhang");
+        pp1.setDemoDeploymentTaskId(1L);
+        ProjectPrototype pp2 = new ProjectPrototype(1L, "Sonarqube", "Sonarqube");
+        pp2.setDemoDeploymentTaskId(2L);
+        retVal.add(pp1);
+        retVal.add(pp2);
         return retVal;
     }
 
